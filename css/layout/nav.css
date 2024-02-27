@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: var(--h-nav);
+    align-items: center;
+}
+
+.img-logo{
+    width: var(--w-logo);
+    height: var(--h-logo);
+}
+
+.menu-list > li {
+    display: inline-block;
+}
+
+@media (max-width: 600px){
+    .menu-list {
+        display: none;
+    }
+}

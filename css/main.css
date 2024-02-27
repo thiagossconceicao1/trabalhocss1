@@ -1,0 +1,11 @@
+/* importar os arquivos */
+@import "base/reset.css";
+@import "base/variaveis.css";
+@import "layout/nav.css";
+@import "base/links.css";
+@import "base/typography.css";
+@import "module/button.css";
+@import "layout/header.css";
+@import "module/card.css";
+@import "layout/sectioncards.css";
+@import "module/divPesquisa.css";

@@ -1,0 +1,45 @@
+header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px 96px auto 20px;
+    position: relative;
+}
+
+nav {
+    grid-column: 2/12;
+    grid-row-start: 1;
+}
+.main_msg {
+    grid-column: 2/7;
+    grid-row-start: 3;
+}
+header > img {
+    grid-column: 8/13;
+    grid-row-start: 3;
+    z-index: 1;
+}
+.div_oval {
+    position: absolute;
+    top: 35%;
+    right: 0;
+    width: 350px;
+    height: 350px;
+    background-color: #da582f;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+@media (max-width: 600px){
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    .div_oval {
+        width: 280px;
+        height: 280px;
+        top: 55%;
+    }
+    .main_msg {
+        padding: 16px;
+    }
+}
